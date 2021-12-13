@@ -410,11 +410,17 @@
                                 display: none;
                             }
                             
+                            .dropdown-menu.custom-position {
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-55%, 20%);
+                            }
+                            
                             .dropdown-menu.mega-menu {
                                 width: 800px;
                                 top: 50%;
                                 left: 50%;
-                                transform: translate(-60%, 10%);
+                                transform: translate(-55%, 8%);
                             }
                             
                             #navigation-wrapper .dropdown-item {
