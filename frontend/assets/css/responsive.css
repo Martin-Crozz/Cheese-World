@@ -8,3 +8,29 @@
                                 max-width: 1300px !important;
                             }
                         }
+                        
+                        @media (max-width: 769px) {
+                            #leftsidebarfilter .left-side-wrapper {
+                                box-shadow: none;
+                            }
+                            #leftsidebarfilter .modal-content {
+                                height: 100%;
+                                overflow-y: scroll;
+                            }
+                            #leftsidebarfilter .modal-body {
+                                padding: 0;
+                            }
+                            .dropdown-menu.mega-menu {
+                                height: 300px;
+                                overflow-y: scroll;
+                                width: auto;
+                                top: none;
+                                left: none;
+                                transform: none;
+                            }
+                            .dropdown-menu.custom-position {
+                                top: none!important;
+                                left: none!important;
+                                transform: none;
+                            }
+                        }
