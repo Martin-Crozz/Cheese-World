@@ -26,6 +26,12 @@
                                     
                                     ul li {
                                         list-style: none;
+                                        transition: all .5s;
+                                    }
+                                    
+                                    ul li:hover {
+                                        transform: translateX(3px);
+                                        transition: all .5s;
                                     }
                                     
                                     a {
@@ -274,8 +280,8 @@
                                     /* Navigation */
                                     
                                     #navigation-wrapper .image a img {
-                                        max-height: 80px;
-                                        min-height: 80px;
+                                        max-height: 40px;
+                                        min-height: 40px;
                                         object-fit: contain;
                                         object-position: center;
                                     }
@@ -311,7 +317,7 @@
                                         color: var(--main-color);
                                     }
                                     
-                                    #navigation-wrapper .navbar-brand h1 span {
+                                    #navigation-wrapper .navbar-brand span {
                                         color: var(--third-color);
                                     }
                                     
@@ -664,7 +670,7 @@
                                         background-repeat: no-repeat;
                                         min-height: 70vh;
                                         max-height: 70vh;
-                                        background-image: url(/frontend/assets/images/product-images/4.jpg);
+                                        background-image: url(/frontend/assets/images/banner/banner2.jpg);
                                     }
                                     
                                     .discription2 {
@@ -1046,23 +1052,17 @@
                                     .filter-content1 .item .active {
                                         color: var(--main-color);
                                     }
-                                    
+                                    /*                                     
                                     .filter-content1,
                                     .filter-content2 {
                                         min-height: 150px;
                                         max-height: 200px;
                                         overflow-y: scroll;
-                                    }
+                                    } */
                                     
                                     .left-side-wrapper .expand a {
                                         text-decoration: none;
                                         color: var(--main-color);
-                                    }
-                                    
-                                    .right-side-wrapper div:nth-child(1),
-                                    .right-side-wrapper div:nth-child(2),
-                                    .right-side-wrapper div:nth-child(3) {
-                                        margin-top: 0 !important;
                                     }
                                     /* Product Listing Ends */
                                     /* Product Detail  */

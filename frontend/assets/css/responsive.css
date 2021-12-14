@@ -20,17 +20,4 @@
                             #leftsidebarfilter .modal-body {
                                 padding: 0;
                             }
-                            .dropdown-menu.mega-menu {
-                                height: 300px;
-                                overflow-y: scroll;
-                                width: auto;
-                                top: none;
-                                left: none;
-                                transform: none;
-                            }
-                            .dropdown-menu.custom-position {
-                                top: none!important;
-                                left: none!important;
-                                transform: none;
-                            }
                         }
