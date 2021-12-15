@@ -298,11 +298,21 @@
             </div>
         </section>
         <!-- Navigation Ends -->
+        <!-- Breadcrumbs -->
+        <section id="breadcrumb-wrapper" class="position-relative">
+            <div class="image">
+                <img src="frontend/assets/images/product-images/3.jpg" alt="breadcrumb-image" class="img-fluid">
+            </div>
+            <div class="overlay position-absolute">
+                <div class="title p-4">Product Listing</div>
+            </div>
+        </section>
+        <!-- Breadcrumbs Ends -->
         <!-- Cart -->
-        <section id="cart-wrapper" class="padding">
+        <section id="cart-wrapper" class="py-3">
             <div class="container">
                 <div class="row py-xl-5 py-md-3 py-0">
-                    <div class="col-xl-3 col-lg-3 col-md-1 col-2">
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-12 mb-xl-0 mb-lg-0 mb-3">
                         <div class="dashboard-list py-lg-5 px-lg-3 d-lg-block d-none">
                             <div class="d-user-avater text-center mb-4">
                                 <img src="frontend/assets/images/product-images/1.jpg" class="img-fluid avater" alt="profile-image">
@@ -322,33 +332,36 @@
                                 <li class="mb-3 p-2">
                                     <a href="dashboard-wishlist.html"><span class="mr-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>Wishlist</a>
                                 </li>
-                                <li class="mb-3 p-2 ">
+                                <li class="mb-3 p-2">
                                     <a href="dashboard-change-password.html"><span class="mr-2"><i class="fa fa-lock" aria-hidden="true"></i></span>Change Password</a>
                                 </li>
-                                <li class="mb-3 p-2 ">
+                                <li class="mb-3 p-2">
                                     <a href="index.html"><span class="mr-2"><i class="fa fa-sign-out" aria-hidden="true"></i></span>Logout</a>
                                 </li>
                             </ul>
                         </div>
                         <!-- Mobile Profile Nav -->
-                        <ul class="mobile-profile-nav d-lg-none d-flex flex-column justify-content-around align-items-center h-100" data-toggle="modal" data-target="#profilemobilenav">
+                        <ul class="mobile-profile-nav d-lg-none d-flex flex justify-content-around align-items-center h-100" data-toggle="modal" data-target="#profilemobilenav">
                             <li>
-                                <span><i class="fa fa-user " aria-hidden="true "></i></span>
+                                <span class="active"><i class="fa fa-user" aria-hidden="true"></i></span>
                             </li>
                             <li>
-                                <span><i class="fa fa-sort " aria-hidden="true "></i></span>
+                                <span><i class="fa fa-sort" aria-hidden="true"></i></span>
                             </li>
                             <li>
-                                <span><i class="fa fa-lock " aria-hidden="true "></i></span>
+                                <span><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
                             </li>
                             <li>
-                                <span><i class="fa fa-sign-out " aria-hidden="true "></i></span>
+                                <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-sign-out" aria-hidden="true"></i></span>
                             </li>
                         </ul>
                         </button>
                         <!-- Mobile Profile Nav Ends-->
                     </div>
-                    <div class="col-xl-9 col-lg-9 col-md-11 col-10 mt-xl-0 mt-md-0 mt-3">
+                    <div class="col-xl-9 col-lg-9 col-md-12 col-12">
                         <div class="profile-side-detail-edit">
                             <div class="dashboard-content d-flex align-items-center h-100">
                                 <div class="shopping-cart">
@@ -449,9 +462,9 @@
                                                 <!-- /tbody -->
                                             </table>
                                             <div class="d-flex justify-content-around align-items-center w-100 my-3 flex-wrap">
-                                                <form class="coupon-field d-flex ">
+                                                <form class="coupon-field d-flex flex-wrap align-items-center justify-content-center">
                                                     <input type="text" placeholder="Apply Coupon Code" class="mr-2">
-                                                    <button type="button" class="effect">Apply Coupon</button>
+                                                    <button type="button" class="effect mt-xl-0 mt-md-0 mt-2">Apply Coupon</button>
                                                 </form>
                                                 <div class="total-amount font-weight-bold mt-xl-0 mt-md-0 mt-2">
                                                     Total Amount : <span>$2000</span>
@@ -460,7 +473,7 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-wrap justify-content-center align-items-center text-center">
-                                        <div class="col-xl-4 col-lg-4 col-md-6 col-12 my-3 ">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-12 my-3">
                                             <div class="cart-summary sub_border_shadow p-xl-4 p-lg-4 p-md-3 p-3 text-left">
                                                 <strong class="cart_text mb-3 d-block font-weight-bold">Cart Summary</strong>
                                                 <div class="cart-price d-flex justify-content-between mb-2">
@@ -568,69 +581,69 @@
     </section>
     <!-- Whole Body Wrapper Ends -->
     <!-- 1st Jquery Link Starts-->
-    <script src="frontend/assets/jquery-3.5.1/jquery-3.5.1.js "></script>
+    <script src="frontend/assets/jquery-3.5.1/jquery-3.5.1.js"></script>
     <!-- Jquery Link Ends-->
     <!-- 2nd Popper Js Starts -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <!-- Popper Js Ends -->
     <!-- 3rd Bootstrap Js Link Starts -->
-    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js "></script>
-    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js.map "></script>
+    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js.map"></script>
     <!-- Bootstrap Js Link Ends -->
     <!-- Slick Js -->
-    <script src="frontend/assets/slick/slick.min.js "></script>
+    <script src="frontend/assets/slick/slick.min.js"></script>
     <!-- Slick Js Ends-->
     <!-- Custom Js Starts -->
-    <script src="frontend/assets/js/main.js "></script>
+    <script src="frontend/assets/js/main.js"></script>
     <!-- Custom Js Ends -->
     <!-- Popup Search Modal -->
     <!-- Modal -->
-    <div class="modal fade" id="searchpopupmodal" tabindex="-1" role="dialog" aria-labelledby="searchpopupmodallabel" aria-hidden="true ">
+    <div class="modal fade" id="searchpopupmodal" tabindex="-1" role="dialog" aria-labelledby="searchpopupmodallabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="searchpopupmodallabel ">Search your favourite item here !</h5>
+                    <h5 class="modal-title" id="searchpopupmodallabel">Search your favourite item here !</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true ">&times;</span>
+            <span aria-hidden="true">&times;</span>
           </button>
                 </div>
-                <div class="modal-body ">
-                    <input type="text ">
+                <div class="modal-body">
+                    <input type="text">
                 </div>
-                <div class="modal-footer my-auto border-0 w-100 ">
-                    <ul class="search-list-wrapper w-100 ">
-                        <li class="mb-2 p-1 ">
-                            <a href=" ">
-                                <div class="row ">
-                                    <div class="col-2 ">
-                                        <div class="image "> <img src="frontend/assets/images/product-images/7.jpg " alt="search-list-image " class="img-fluid "></div>
+                <div class="modal-footer my-auto border-0 w-100">
+                    <ul class="search-list-wrapper w-100">
+                        <li class="mb-2 p-1">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="image"> <img src="frontend/assets/images/product-images/7.jpg" alt="search-list-image" class="img-fluid"></div>
                                     </div>
-                                    <div class="col-10 m-auto ">
-                                        <p class="m-0 ">Ham Cheese Burger</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="mb-2 p-1 ">
-                            <a href=" ">
-                                <div class="row ">
-                                    <div class="col-2 ">
-                                        <div class="image "> <img src="frontend/assets/images/product-images/7.jpg " alt="search-list-image " class="img-fluid "></div>
-                                    </div>
-                                    <div class="col-10 m-auto ">
-                                        <p class="m-0 ">Ham Cheese Burger</p>
+                                    <div class="col-10 m-auto">
+                                        <p class="m-0">Ham Cheese Burger</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="mb-2 p-1 ">
-                            <a href=" ">
-                                <div class="row ">
-                                    <div class="col-2 ">
-                                        <div class="image "> <img src="frontend/assets/images/product-images/7.jpg " alt="search-list-image " class="img-fluid "></div>
+                        <li class="mb-2 p-1">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="image"> <img src="frontend/assets/images/product-images/7.jpg" alt="search-list-image" class="img-fluid"></div>
                                     </div>
-                                    <div class="col-10 m-auto ">
-                                        <p class="m-0 ">Ham Cheese Burger</p>
+                                    <div class="col-10 m-auto">
+                                        <p class="m-0">Ham Cheese Burger</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mb-2 p-1">
+                            <a href="">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="image"> <img src="frontend/assets/images/product-images/7.jpg" alt="search-list-image" class="img-fluid"></div>
+                                    </div>
+                                    <div class="col-10 m-auto">
+                                        <p class="m-0">Ham Cheese Burger</p>
                                     </div>
                                 </div>
                             </a>
@@ -809,12 +822,12 @@
                                             </li>
                                             <li>
                                                 <div class="item">
-                                                    <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                    <a href="" class="category-item py-1">Cheese Category 1</a>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="item">
-                                                    <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                    <a href="" class="category-item py-1">Cheese Category 1</a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -827,12 +840,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -842,12 +850,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -857,12 +860,22 @@
                                                 </li>
                                                 <li>
                                                     <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -1005,12 +1018,12 @@
                                             </li>
                                             <li>
                                                 <div class="item">
-                                                    <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                    <a href="" class="category-item py-1">Cheese Category 1</a>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="item">
-                                                    <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                    <a href="" class="category-item py-1">Cheese Category 1</a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -1023,12 +1036,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -1038,12 +1046,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -1053,12 +1056,22 @@
                                                 </li>
                                                 <li>
                                                     <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
-                                                        <a href="" class="category-item py-1 ">Cheese Category 1</a>
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <a href="" class="category-item py-1">Cheese Category 1</a>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -1189,6 +1202,53 @@
         </div>
     </div>
     <!-- Mobile Filter Pop Up Ends -->
+    <!-- Mobile Profile Nav Pop Up -->
+    <div class="modal fade" id="profilemobilenav" tabindex="-1" role="dialog" aria-labelledby="profilemobilenavtitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content h-100  border-0">
+                <!-- <div class="modal-header">
+                        <h5 class="modal-title" id="profilemobilenavtitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div> -->
+                <div class="modal-body d-flex align-items-center justify-content-around h-100 w-100 p-0">
+
+                    <div class="dashboard-list2 px-2 py-0">
+                        <div class="d-user-avater text-center mb-4">
+                            <img src="frontend/assets/images/product-images/1.jpg" class="img-fluid avater" alt="profile-image">
+                            <h5>Adam Harshvardhan</h5>
+                            <a href=""> <span class="mr-1"><i class="fa fa-pencil" aria-hidden="true"></i></span> Upload Image</a>
+                        </div>
+                        <ul class="sidebar">
+                            <li class="active mb-3 p-2">
+                                <a href="dashboard-profile.html"><span class="mr-2"><i class="fa fa-user" aria-hidden="true"></i></span>Profile</a>
+                            </li>
+                            <li class="mb-3 p-2">
+                                <a href="dashboard-order-status.html"><span class="mr-2"><i class="fa fa-sort" aria-hidden="true"></i></span>Order Status</a>
+                            </li>
+                            <li class="mb-3 p-2">
+                                <a href="dashboard-cart.html"><span class="mr-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>My Cart</a>
+                            </li>
+                            <li class="mb-3 p-2">
+                                <a href="dashboard-wishlist.html"><span class="mr-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>Wishlist</a>
+                            </li>
+                            <li class="mb-3 p-2">
+                                <a href="dashboard-change-password.html"><span class="mr-2"><i class="fa fa-lock" aria-hidden="true"></i></span>Change Password</a>
+                            </li>
+                            <li class="mb-3 p-2">
+                                <a href="index.html"><span class="mr-2"><i class="fa fa-sign-out" aria-hidden="true"></i></span>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Profile Nav Pop Up Ends -->
 </body>
 
 </html>

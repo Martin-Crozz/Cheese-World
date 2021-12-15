@@ -277,6 +277,39 @@
                                             #leftsidebarfilter.fade.show .modal-dialog {
                                                 left: 0;
                                             }
+                                            
+                                            .mobile-profile-nav {
+                                                box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+                                                border-radius: 5px;
+                                            }
+                                            
+                                            .active {
+                                                color: var(--main-color);
+                                            }
+                                            
+                                            #profilemobilenav .modal-dialog {
+                                                position: fixed;
+                                                left: 0;
+                                                margin: auto;
+                                                width: 230px;
+                                                height: 100%;
+                                                -webkit-transform: translate3d(0%, 0, 0);
+                                                -ms-transform: translate3d(0%, 0, 0);
+                                                -o-transform: translate3d(0%, 0, 0);
+                                                transform: translate3d(0%, 0, 0);
+                                            }
+                                            
+                                            #profilemobilenav.fade .modal-dialog {
+                                                left: -320px;
+                                                -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+                                                -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+                                                -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+                                                transition: opacity 0.3s linear, left 0.3s ease-out;
+                                            }
+                                            
+                                            #profilemobilenav.fade.show .modal-dialog {
+                                                left: 0;
+                                            }
                                             /* Global Css Ends */
                                             /* Navigation */
                                             
