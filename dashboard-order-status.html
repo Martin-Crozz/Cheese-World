@@ -298,8 +298,18 @@
             </div>
         </section>
         <!-- Navigation Ends -->
-        <!-- Cart -->
-        <section id="profile-wrapper" class="py-3">
+        <!-- Breadcrumbs -->
+        <section id="breadcrumb-wrapper" class="position-relative">
+            <div class="image">
+                <img src="frontend/assets/images/product-images/3.jpg" alt="breadcrumb-image" class="img-fluid">
+            </div>
+            <div class="overlay position-absolute">
+                <div class="title p-4">Product Listing</div>
+            </div>
+        </section>
+        <!-- Breadcrumbs Ends -->
+        <!-- Order-Status -->
+        <section id="order-wrapper" class="py-3">
             <div class="container">
                 <div class="row py-xl-5 py-md-3 py-0">
                     <div class="col-xl-3 col-lg-3 col-md-1 col-2">
@@ -317,7 +327,10 @@
                                     <a href="dashboard-order-status.html"><span class="mr-2"><i class="fa fa-sort" aria-hidden="true"></i></span>Order Status</a>
                                 </li>
                                 <li class="mb-3 p-2">
-                                    <a href="dashboard-order-status.html"><span class="mr-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>My Cart</a>
+                                    <a href="dashboard-cart.html"><span class="mr-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>My Cart</a>
+                                </li>
+                                <li class="mb-3 p-2">
+                                    <a href="dashboard-wishlist.html"><span class="mr-2"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>Wishlist</a>
                                 </li>
                                 <li class="mb-3 p-2 ">
                                     <a href="dashboard-change-password.html"><span class="mr-2"><i class="fa fa-lock" aria-hidden="true"></i></span>Change Password</a>
@@ -346,134 +359,132 @@
                         <!-- Mobile Profile Nav Ends-->
                     </div>
                     <div class="col-xl-9 col-lg-9 col-md-11 col-10 mt-xl-0 mt-md-0 mt-3">
-                        <div class="profile-side-detail-edit">
-                            <div class="dashboard-content d-flex align-items-center h-100">
-                                <div class="shopping-cart-table">
-                                    <div class="table-responsive-xl">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col" class="cart-product-id item">Order ID </th>
-                                                    <th scope="col" class="cart-product-date item">Date </th>
-                                                    <th scope="col" class="cart-description item">Image</th>
-                                                    <th scope="col" class="cart-product-name item">Product Name</th>
-                                                    <th scope="col" class="cart-qty item">Quantity</th>
-                                                    <th scope="col" class="cart-total last-item">Total</th>
-                                                    <th scope="col" class="cart-total last-item">Status</th>
-                                                    <th scope="col" class="cart-romove item"></th>
-                                                </tr>
-                                            </thead>
-                                            <!-- /thead -->
-                                            <tbody>
-                                                <tr>
-                                                    <td class="cart-product-order-id">
-                                                        <span>#123456</span>
-                                                    </td>
-                                                    <td class="cart-product-order-date">
-                                                        <span>6/24/2021</span>
-                                                    </td>
-                                                    <td class="cart-image">
-                                                        <a class="entry-thumbnail" href="detail.html">
-                                                            <img src="frontend/assets/images/product-images/8.jpg" class="img-fluid">
-                                                        </a>
-                                                    </td>
-                                                    <td class="cart-product-name-info">
-                                                        <h4 class="cart-product-description"><a href="detail.html">Yoga Mat</a></h4>
-                                                        <div class="row">
-                                                            <div class="col-4">
-                                                                <div class="rating rateit-small"></div>
-                                                            </div>
+                        <div class="dashboard-content d-flex align-items-center">
+                            <div class="shopping-cart-table">
+                                <div class="table-responsive-xl">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="cart-product-id item">Order ID </th>
+                                                <th scope="col" class="cart-product-date item">Date </th>
+                                                <th scope="col" class="cart-description item">Image</th>
+                                                <th scope="col" class="cart-product-name item">Product Name</th>
+                                                <th scope="col" class="cart-qty item">Quantity</th>
+                                                <th scope="col" class="cart-total last-item">Total</th>
+                                                <th scope="col" class="cart-total last-item">Status</th>
+                                                <th scope="col" class="cart-romove item"></th>
+                                            </tr>
+                                        </thead>
+                                        <!-- /thead -->
+                                        <tbody>
+                                            <tr>
+                                                <td class="cart-product-order-id">
+                                                    <span>#123456</span>
+                                                </td>
+                                                <td class="cart-product-order-date">
+                                                    <span>6/24/2021</span>
+                                                </td>
+                                                <td class="cart-image">
+                                                    <a class="entry-thumbnail" href="detail.html">
+                                                        <img src="frontend/assets/images/product-images/8.jpg" class="img-fluid">
+                                                    </a>
+                                                </td>
+                                                <td class="cart-product-name-info">
+                                                    <h4 class="cart-product-description"><a href="detail.html">Yoga Mat</a></h4>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <div class="rating rateit-small"></div>
                                                         </div>
-                                                        <!-- /.row -->
-                                                    </td>
-                                                    <td class="cart-product-quantity">
-                                                        <div class="quant-input">
-                                                            <span>1</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="cart-product-grand-total"><span class="cart-grand-total-price">$300.00</span>
-                                                    </td>
-                                                    <td class="cart-product-order-date">
-                                                        <span class="bg-success text-white px-3 py-2">Delivered</span>
-                                                    </td>
-                                                    <td class="view-item"><a href="#" title="cancel" class="icon">
+                                                    </div>
+                                                    <!-- /.row -->
+                                                </td>
+                                                <td class="cart-product-quantity">
+                                                    <div class="quant-input">
+                                                        <span>1</span>
+                                                    </div>
+                                                </td>
+                                                <td class="cart-product-grand-total"><span class="cart-grand-total-price">$300.00</span>
+                                                </td>
+                                                <td class="cart-product-order-date">
+                                                    <span class="bg-success text-white px-3 py-2">Delivered</span>
+                                                </td>
+                                                <td class="view-item"><a href="#" title="cancel" class="icon">
                                                         View</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cart-product-order-id">
-                                                        <span>#123456</span>
-                                                    </td>
-                                                    <td class="cart-product-order-date">
-                                                        <span>6/24/2021</span>
-                                                    </td>
-                                                    <td class="cart-image">
-                                                        <a class="entry-thumbnail" href="detail.html">
-                                                            <img src="frontend/assets/images/product-images/6.jpg" class="img-fluid">
-                                                        </a>
-                                                    </td>
-                                                    <td class="cart-product-name-info">
-                                                        <h4 class="cart-product-description"><a href="detail.html">Yoga Mat</a></h4>
-                                                        <div class="row">
-                                                            <div class="col-4">
-                                                                <div class="rating rateit-small"></div>
-                                                            </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cart-product-order-id">
+                                                    <span>#123456</span>
+                                                </td>
+                                                <td class="cart-product-order-date">
+                                                    <span>6/24/2021</span>
+                                                </td>
+                                                <td class="cart-image">
+                                                    <a class="entry-thumbnail" href="detail.html">
+                                                        <img src="frontend/assets/images/product-images/6.jpg" class="img-fluid">
+                                                    </a>
+                                                </td>
+                                                <td class="cart-product-name-info">
+                                                    <h4 class="cart-product-description"><a href="detail.html">Yoga Mat</a></h4>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <div class="rating rateit-small"></div>
                                                         </div>
-                                                        <!-- /.row -->
-                                                    </td>
-                                                    <td class="cart-product-quantity">
-                                                        <div class="quant-input">
-                                                            <span>1</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="cart-product-grand-total"><span class="cart-grand-total-price">$300.00</span>
-                                                    </td>
-                                                    <td class="cart-product-order-date">
-                                                        <span class="bg-warning text-white px-3 py-2">Pending</span>
-                                                    </td>
-                                                    <td class="view-item"><a href="#" title="cancel" class="icon">
+                                                    </div>
+                                                    <!-- /.row -->
+                                                </td>
+                                                <td class="cart-product-quantity">
+                                                    <div class="quant-input">
+                                                        <span>1</span>
+                                                    </div>
+                                                </td>
+                                                <td class="cart-product-grand-total"><span class="cart-grand-total-price">$300.00</span>
+                                                </td>
+                                                <td class="cart-product-order-date">
+                                                    <span class="bg-warning text-white px-3 py-2">Pending</span>
+                                                </td>
+                                                <td class="view-item"><a href="#" title="cancel" class="icon">
                                                         View</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cart-product-order-id">
-                                                        <span>#123456</span>
-                                                    </td>
-                                                    <td class="cart-product-order-date">
-                                                        <span>6/24/2021</span>
-                                                    </td>
-                                                    <td class="cart-image">
-                                                        <a class="entry-thumbnail" href="detail.html">
-                                                            <img src="frontend/assets/images/product-images/7.jpg" class="img-fluid">
-                                                        </a>
-                                                    </td>
-                                                    <td class="cart-product-name-info">
-                                                        <h4 class="cart-product-description"><a href="detail.html">Yoga Mat</a></h4>
-                                                        <div class="row">
-                                                            <div class="col-4">
-                                                                <div class="rating rateit-small"></div>
-                                                            </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cart-product-order-id">
+                                                    <span>#123456</span>
+                                                </td>
+                                                <td class="cart-product-order-date">
+                                                    <span>6/24/2021</span>
+                                                </td>
+                                                <td class="cart-image">
+                                                    <a class="entry-thumbnail" href="detail.html">
+                                                        <img src="frontend/assets/images/product-images/7.jpg" class="img-fluid">
+                                                    </a>
+                                                </td>
+                                                <td class="cart-product-name-info">
+                                                    <h4 class="cart-product-description"><a href="detail.html">Yoga Mat</a></h4>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <div class="rating rateit-small"></div>
                                                         </div>
-                                                        <!-- /.row -->
-                                                    </td>
-                                                    <td class="cart-product-quantity">
-                                                        <div class="quant-input">
-                                                            <span>1</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="cart-product-grand-total"><span class="cart-grand-total-price">$300.00</span>
-                                                    </td>
-                                                    <td class="cart-product-order-date">
-                                                        <span class="bg-danger text-white px-3 py-2">Cancelled</span>
-                                                    </td>
-                                                    <td class="view-item"><a href="#" title="cancel" class="icon">
+                                                    </div>
+                                                    <!-- /.row -->
+                                                </td>
+                                                <td class="cart-product-quantity">
+                                                    <div class="quant-input">
+                                                        <span>1</span>
+                                                    </div>
+                                                </td>
+                                                <td class="cart-product-grand-total"><span class="cart-grand-total-price">$300.00</span>
+                                                </td>
+                                                <td class="cart-product-order-date">
+                                                    <span class="bg-danger text-white px-3 py-2">Cancelled</span>
+                                                </td>
+                                                <td class="view-item"><a href="#" title="cancel" class="icon">
                                                         View</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                            <!-- /tbody -->
-                                        </table>
-                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- /tbody -->
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -482,7 +493,7 @@
             </div>
             </div>
         </section>
-        <!-- Cart Ends -->
+        <!-- Order-Status Ends -->
         <!-- Footer -->
         <section id="footer-wrapper" class="text-white py-5">
             <div class="container">
