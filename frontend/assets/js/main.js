@@ -57,16 +57,18 @@ $('.slick-slider').slick({
 // Navigation Js Scroll Starts
 $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll > 150) {
+        if (scroll > 50) {
             $(".navigation-wrap").css("background", "white");
             $(".nav-link").css("color", "#484d67");
-            $(".navigation-wrap").css("box-shadow", "rgb(210 210 210) 0px 0px 6px 0px");
+            $(".navigation-wrap").css("box-shadow", "rgb(0 0 0 / 20%) 0px 10px 10px -7px");
             $(".navigation-wrap").css("padding", "10px 0px");
+            $(".navigation-wrap").css("border-bottom", "3px solid var(--main-color)");
         } else {
             $(".navigation-wrap").css("background", "white");
             $(".nav-link").css("color", "#484d67");
             $(".navigation-wrap").css("box-shadow", "none");
             $(".navigation-wrap").css("padding", "20px 0px");
+            $(".navigation-wrap").css("border-bottom", "unset");
         }
     }) // Navigation Js Scroll Ends
 $(document).ready(function() {
@@ -106,4 +108,25 @@ $(document).ready(function() {
     // activation zoom plugin
     // var $easyzoom = $('.easyzoom').easyZoom();
     // Dropdown Menu On Hover
+
+
+}); //   Video Play Button Pop Up Starts
+$('#play-video').on('click', function(e) {
+    e.preventDefault();
+    $('#video-overlay').addClass('open');
+    $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
 });
+
+$('.video-overlay, .video-overlay-close').on('click', function(e) {
+    e.preventDefault();
+    close_video();
+});
+
+$(document).keyup(function(e) {
+    if (e.keyCode === 27) { close_video(); }
+});
+
+function close_video() {
+    $('.video-overlay.open').removeClass('open').find('iframe').remove();
+};
+//   Video Play Button Pop Up Ends
