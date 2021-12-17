@@ -170,7 +170,7 @@
                 z-index: 99999;
             }
             
-            .nav-item .active {
+            .nav-item .nav-link.active {
                 color: var(--main-color);
             }
             
