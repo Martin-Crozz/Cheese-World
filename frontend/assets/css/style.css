@@ -1797,11 +1797,6 @@
             #rightsidebarfilter .modal-footer a {
                 text-decoration: none;
             }
-            /* #rightsidebarfilter .modal-footer a:active,
-            a:hover {
-                color: white;
-            }
-             */
             
             #rightsidebarfilter .modal-footer {
                 background-color: var(--main-color);
@@ -1831,3 +1826,86 @@
                 color: var(--main-color) !important;
             }
             /* Mobile Menu Ends */
+            /*============================================== CHECKOUT PAGE START =======================*/
+            
+            section#checkout .checkout-wrapper {
+                box-shadow: 0px 0px 5px 0px #d5d5d5;
+            }
+            
+            section#checkout .my-cart-number {
+                background: var(--third-color);
+                color: white;
+                width: 4rem;
+                height: 4rem;
+                line-height: 4rem;
+                text-align: center;
+            }
+            
+            section#checkout .my-car-title {
+                background: #F6F6F6;
+            }
+            
+            section#checkout .my-cart-order h4 {
+                color: var(--black);
+                margin: 0;
+                line-height: 4rem;
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-left: 1rem;
+            }
+            
+            section#checkout .img-block img {
+                object-fit: contain;
+                object-position: center;
+                max-height: 100px;
+                min-height: 100px;
+            }
+            
+            section#checkout input {
+                width: 57px;
+                color: black !important;
+            }
+            
+            section#checkout .btn_groups-single a {
+                background-color: var(--blue);
+                color: var(--white);
+                padding: 15px 25px;
+            }
+            
+            section#checkout ul {
+                display: flex;
+            }
+            
+            section#checkout table td {
+                display: table-cell;
+                margin: auto;
+                vertical-align: middle;
+            }
+            
+            section#checkout .text_gray .topping {
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            section#checkout .text_gray {
+                font-size: .9rem;
+                font-weight: 600;
+            }
+            
+             ::-webkit-input-placeholder {
+                /* Edge */
+                color: #fff;
+                font-size: 14px;
+            }
+            
+             :-ms-input-placeholder {
+                /* Internet Explorer */
+                color: #fff;
+                font-size: 14px;
+            }
+            
+             ::placeholder {
+                color: #fff;
+                font-size: 14px;
+            }
+            /*============================================== CHECKOUT PAGE END =======================*/

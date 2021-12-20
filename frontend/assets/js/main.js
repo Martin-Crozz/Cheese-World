@@ -74,6 +74,14 @@ $(window).scroll(function() {
         }
     }) // Navigation Js Scroll Ends
 $(document).ready(function() {
+    // Infinte Scroll Js Plugin
+    $('.right-side-wrapper').infiniteScroll({
+        // options
+        path: '.pagination__next',
+        append: '.post',
+        history: false,
+    });
+    // Infinte Scroll Js Plugin Ends
     // product Gallery and Zoom
     // activation carousel plugin
     var galleryThumbs = new Swiper('.gallery-thumbs', {
