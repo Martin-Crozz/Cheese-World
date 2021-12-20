@@ -41,14 +41,16 @@ $('.slick-slider').slick({
             breakpoint: 600,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true
             }
         },
         {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true
             }
         }
     ]
@@ -67,7 +69,7 @@ $(window).scroll(function() {
             $(".navigation-wrap").css("background", "white");
             $(".nav-link").css("color", "#484d67");
             $(".navigation-wrap").css("box-shadow", "none");
-            $(".navigation-wrap").css("padding", "20px 0px");
+            $(".navigation-wrap").css("padding", "15px 0px");
             $(".navigation-wrap").css("border-bottom", "unset");
         }
     }) // Navigation Js Scroll Ends
