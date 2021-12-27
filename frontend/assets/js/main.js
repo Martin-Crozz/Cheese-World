@@ -1,4 +1,4 @@
-// loader 
+// loader
 // $(document).ready(function(){
 // 	$('div#loading').removeAttr('id');
 // });
@@ -110,10 +110,8 @@ $(document).ready(function() {
     $('.gallery-thumbs').css('height', productCarouselThumbsItemWith);
     // activation zoom plugin
     // var $easyzoom = $('.easyzoom').easyZoom();
-    // Dropdown Menu On Hover
-
-
-}); //   Video Play Button Pop Up Starts
+});
+//   Video Play Button Pop Up Starts
 $('#play-video').on('click', function(e) {
     e.preventDefault();
     $('#video-overlay').addClass('open');
